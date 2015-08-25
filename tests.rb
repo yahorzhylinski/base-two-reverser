@@ -3,7 +3,17 @@ require './base_two_neg_reverser.rb'
 RSpec.describe do
 
   it "base_two_neg_reverser should convert empty sequence to [0]" do
-    expect(base_two_neg_reverser([])).to eq([0])
+    expect(base_two_neg_reverser([0])).to eq([0])
+  end
+
+  it "base_two_neg_reverser should convert 0 to 0" do
+                                 # => 0       # => -0
+    expect(base_two_neg_reverser([0])).to eq([0])
+  end
+
+  it "base_two_neg_reverser should convert 1 to -1" do
+                                  # => 1     # => -1
+    expect(base_two_neg_reverser([1])).to eq([1,1])
   end
 
   it "base_two_neg_reverser should convert 9 to -9" do
