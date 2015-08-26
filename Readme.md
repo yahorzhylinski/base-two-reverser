@@ -27,6 +27,10 @@ Complexity:
 
 Elements of input arrays can be modified.
 
+Implementation:
+---------------
+I left a lot of comments in the method. There is "Write a function: function solution($A);" in the task. So, i wrote the method without a class, but i changed name of it. 
+
 Tests
 ------
 
