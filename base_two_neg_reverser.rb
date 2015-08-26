@@ -5,8 +5,12 @@ def base_two_neg_reverser(array)
     return [0]
   end
 
+  # => expected worst-case space complexity is O(M),
   result = []
   change_next_element = false
+
+  # => expected worst-case time complexity is O(M);
+  # => to resolve this task i use only one iteration
   array.each_with_index do | element, index |
 
     result[index] = element
